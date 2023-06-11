@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Muli';
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100vh;
+  max-height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  /* border: 1px solid rgba(255, 237, 45, 0.799); */
+  border-radius: 20px;
+  box-shadow: 0 0 2px rgba(255, 246, 144, 0.964), 0 0 30px rgba(255, 246, 144, 0.964), 0 0 2px rgba(255, 246, 144, 0.964);
+}
+
+.square {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  background-color: #2d2d2d;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 2s ease;
+  border-radius: 999px;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.clear-btn{
+  font-family: 'Muli';
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #111;
+  border: 1px solid rgba(255, 246, 144, 0.964);
+  border-radius: 10px;
+  color: rgba(255, 246, 144, 0.964);
+  font-size: 30px;
+  font-weight: 100;
+  box-shadow: 0 0 2px rgba(255, 246, 144, 0.964), 0 0 30px rgba(255, 246, 144, 0.964);
+  transition: all 0.4s ease-in;
+}
+
+.clear-btn:hover {
+  background-color: rgba(255, 242, 0, 0.912);
+  color: #fff;
+}
+
+/* .clear-btn:active {
+  border: 2px solid rgba(255, 246, 144, 0.522);
+} */
