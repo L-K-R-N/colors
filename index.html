@@ -8,16 +8,43 @@
     <script defer src="./app.js"></script>
   </head>
   <body>
-    <!-- <form class="settings" name="settsings">
+    
+    <div class="wrapper">
+      <div class="game">
+        <form class="settings" name="settings">
         <h2 class="settings__title">Settings</h2>
 
+        <div class="behavior">
+          <label class="behavior-titile subtitle">behavior</label>
+          <div class="pulsation-container">
+            <input type="checkbox" class="pulsation" id="pulsation" data-input="pulsation"><label for="pulsation">pulsation</label>
+          </div>
+        </div>
+
+        <div class="border-radius-container">
+          <label for="border-radius" class="subtitle">border-radius:</label>
+        <input id="border-radius" type="number" class="border-radius" name="border-radius" placeholder="1" data-input="borderRadius">
+        </div>
 
         
-    </form> -->
-    <div class="game">
-      <div class="container" id="board"></div>
-    
-    <button class="clear-btn">CLEAR</button>
+        <div class="field-size-settings">
+          <label class="field-size-title subtitle">Field size:</label>
+          <input id="ten" type="radio" class="size-radio" value="10" name="field-size" data-input="boardSize"><label for="ten">10 X 10</label>
+          <input id="fiveteen" type="radio" class="size-radio" value="15" name="field-size" data-input="boardSize"><label for="fiveteen">15 X 15</label>
+          <input id="twenty" type="radio" class="size-radio" value="20" name="field-size" data-input="boardSize"><label for="twenty">20 X 20</label>
+        </div>
+
+        <div class="buttons">
+          <a href="#" class="clear-btn btn" data-action="clear">C L E A R</a>
+          <!-- <a href="#" class="paint-btn btn" data-action="paint">P A I N T</a> -->
+        </div>
+      </form>
+        
+        
+        <div class="container" id="board"></div>
+  
+      </div>
     </div>
+    
   </body>
 </html>
